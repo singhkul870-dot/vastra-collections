@@ -4,8 +4,9 @@ import pastelFloraImg from '../assets/images/pastel_flora_cotton_1791539959356.j
 import royalHeritageImg from '../assets/images/royal_heritage_silk_1791539979182.jpg';
 import georgetteImg from '../assets/images/contemporary_georgette_1791540006107.jpg';
 import craftImg from '../assets/images/boutique_craft_1791540035471.jpg';
+import logoImg from '../assets/images/vastra_boutique_logo_1791621174986.jpg';
 
-export { heroBannerImg, pastelFloraImg, royalHeritageImg, georgetteImg, craftImg };
+export { heroBannerImg, pastelFloraImg, royalHeritageImg, georgetteImg, craftImg, logoImg };
 
 export const STORE_DETAILS: StoreDetails = {
   name: 'Vastra Collections',
@@ -162,12 +163,12 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'vas-pf-03',
-    sku: 'VC-PF-1499-03',
+    sku: 'VC-PF-1650-03',
     name: 'Kesar Chameli Premium Lawn Cotton Set',
     collectionId: 'pastel-flora',
     collectionTitle: 'The Pastel Flora Collection',
-    price: 1399,
-    originalPrice: 1999,
+    price: 1650,
+    originalPrice: 2250,
     fabric: 'Superfine Mulberry Cotton Lawn',
     description:
       'Airy pastel saffron and ivory suit with intricate shadow embroidery and scalloped chiffon dupatta.',
@@ -194,12 +195,12 @@ export const PRODUCTS: Product[] = [
   // 2. Royal Heritage Series
   {
     id: 'vas-rh-01',
-    sku: 'VC-RH-3500-01',
+    sku: 'VC-RH-1650-01',
     name: 'Rajwada Banarasi Woven Zari Silk Suit',
     collectionId: 'royal-heritage',
     collectionTitle: 'Royal Heritage Series',
-    price: 3650,
-    originalPrice: 5200,
+    price: 1650,
+    originalPrice: 2450,
     fabric: 'Authentic Banarasi Katan Silk',
     description:
       'Regal midnight sapphire silk unstitched suit with opulent golden zari border and peacock motif pallu.',
@@ -254,12 +255,12 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'vas-rh-03',
-    sku: 'VC-RH-5900-03',
+    sku: 'VC-RH-2000-03',
     name: 'Nawabzada Katan Silk Bridal Edition',
     collectionId: 'royal-heritage',
     collectionTitle: 'Royal Heritage Series',
-    price: 5200,
-    originalPrice: 6500,
+    price: 2000,
+    originalPrice: 2999,
     fabric: 'Pure Mulberry Katan Silk',
     description:
       'Emerald jade and rich antique champagne gold silk with heavy heritage temple border weaving.',

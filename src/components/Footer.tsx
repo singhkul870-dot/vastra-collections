@@ -9,7 +9,7 @@ import {
   Heart,
   Check,
 } from 'lucide-react';
-import { STORE_DETAILS } from '../data/storeData';
+import { STORE_DETAILS, logoImg } from '../data/storeData';
 
 interface FooterProps {
   onSelectCategory: (catId: string) => void;
@@ -46,13 +46,22 @@ export const Footer: React.FC<FooterProps> = ({
           
           {/* Column 1: Brand & Slogan (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <div>
-              <span className="font-serif text-3xl tracking-[0.2em] font-semibold text-white">
-                VASTRA
-              </span>
-              <p className="text-xs tracking-[0.35em] text-[#C5A059] uppercase font-medium mt-0.5">
-                COLLECTIONS
-              </p>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full overflow-hidden bg-white/95 p-1 border border-[#C5A059]/40 shrink-0">
+                <img
+                  src={logoImg}
+                  alt="Vastra Collection Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <span className="font-serif text-2xl tracking-[0.2em] font-semibold text-white block leading-tight">
+                  VASTRA
+                </span>
+                <p className="text-[10px] tracking-[0.35em] text-[#C5A059] uppercase font-semibold">
+                  COLLECTION
+                </p>
+              </div>
             </div>
             
             <p className="text-sm font-serif italic text-[#E2CCA0] text-base">

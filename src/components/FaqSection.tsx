@@ -64,7 +64,7 @@ export const FaqSection: React.FC = () => {
 
   return (
     <section id="faq" className="py-16 sm:py-24 bg-[#FAF8F5] border-t border-[#E8E2D8]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl 2xl:max-w-[1650px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-10 sm:mb-12">
@@ -81,14 +81,14 @@ export const FaqSection: React.FC = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="max-w-xl mx-auto mb-8 relative">
+        <div className="max-w-xl 2xl:max-w-2xl mx-auto mb-8 relative">
           <Search className="w-4 h-4 text-stone-400 absolute left-3.5 top-3.5 pointer-events-none" />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search questions (e.g., silk dry clean, plus size, 7-day return, COD)..."
-            className="w-full text-xs sm:text-sm pl-10 pr-4 py-3 bg-white border border-[#E8E2D8] rounded-full focus:outline-none focus:border-[#C5A059] shadow-xs text-stone-800 placeholder-stone-400"
+            className="w-full text-xs sm:text-sm pl-10 pr-4 py-3 bg-white border border-[#E8E2D8] rounded-full focus:outline-none focus:border-[#C5A059] focus:ring-1 focus:ring-[#C5A059] shadow-xs text-stone-800 placeholder-stone-400 transition-all"
           />
           {searchQuery && (
             <button

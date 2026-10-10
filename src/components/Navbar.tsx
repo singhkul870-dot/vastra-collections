@@ -10,7 +10,7 @@ import {
   MapPin,
   MessageCircle,
 } from 'lucide-react';
-import { STORE_DETAILS } from '../data/storeData';
+import { STORE_DETAILS, logoImg } from '../data/storeData';
 
 interface NavbarProps {
   cartCount: number;
@@ -115,17 +115,30 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Boutique Brand Logo */}
-          <div className="flex flex-col items-center sm:items-start text-center cursor-pointer" onClick={() => handleNavClick('hero')}>
-            <span className="font-serif text-2xl sm:text-3xl tracking-[0.2em] font-semibold text-[#1C2A39]">
-              VASTRA
-            </span>
-            <div className="flex items-center gap-2">
-              <span className="text-[10px] sm:text-xs tracking-[0.35em] text-[#C5A059] uppercase font-medium">
-                Collections
+          <div
+            className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group select-none"
+            onClick={() => handleNavClick('hero')}
+            title="Vastra Collection - Back to Home"
+          >
+            <div className="relative w-11 h-11 sm:w-13 sm:h-13 rounded-full overflow-hidden border border-[#C5A059]/50 bg-white shadow-xs shrink-0 group-hover:border-[#C5A059] group-hover:shadow-md transition-all p-0.5">
+              <img
+                src={logoImg}
+                alt="Vastra Collection Official Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="flex flex-col text-left">
+              <span className="font-serif text-xl sm:text-2xl tracking-[0.18em] font-semibold text-[#1C2A39] leading-tight group-hover:text-[#C5A059] transition-colors">
+                VASTRA
               </span>
-              <span className="text-[9px] text-[#8C271E]/80 hidden md:inline tracking-wider">
-                • Boutique Atelier
-              </span>
+              <div className="flex items-center gap-1.5 mt-0.5">
+                <span className="text-[9px] sm:text-[10px] tracking-[0.32em] text-[#C5A059] uppercase font-semibold">
+                  COLLECTION
+                </span>
+                <span className="text-[8px] text-[#8C271E]/80 hidden md:inline tracking-wider font-medium">
+                  • Atelier
+                </span>
+              </div>
             </div>
           </div>
 
