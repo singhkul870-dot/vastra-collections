@@ -1,0 +1,8 @@
+{
+  "name": "Vastra Collections",
+  "description": "Vastra Collections - Premium Women's Ethnic Wear Boutique. Unstitched Elegance. Designed by You. High-quality unstitched salwar suits, trendy kurti material, and festive silks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
